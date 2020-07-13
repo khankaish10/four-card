@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+ body{
+     font-family: 'poppins' 'sans-serif';
+     font-size: 15px;
+     background:  rgba(202, 202, 202, 0.253) ;
+    
+ }
+
+ .text{
+     text-align: center;
+     margin: 3% 0px 0px ;
+ }
+ .colortext{
+    font-family: 'poppins' 'sans-serif';
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+ }
+ h1.bold{
+     font-weight: 400; 
+     margin-top:20px ;
+ }
+
+.text >p{
+    text-align: center;
+    padding: 30px 500px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+     flex-wrap: wrap;
+    margin: 10px auto ;
+    width: 70%;
+}
+.box{
+    height: 200px;
+    font-family: 'poppins' 'sans-serif';
+    font-weight: 400;
+    width: 250px;
+    background-color: white;
+   box-shadow:  3px 6px 33px -8px rgba(0,0,0,0.73); 
+    border-radius: 7px;
+    margin: 20px ;
+    position: relative;
+   
+}
+.supervisor{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.teambuilder{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+ .supervisor, .calculator{
+    transform: translateY(50%);
+} 
+.box h3{
+    font-size: 28px;
+} 
+.box p{
+    font-size: 14px;
+}
+.box h3, .box p{
+    padding: 15px 10px 5px 25px;
+}
+svg{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+
+
+/* for mobile version */
+
+@media screen and (max-width:600px){
+    .text{
+        margin-top: 50px;
+    }
+
+  .text >p{
+      padding: 50px;
+     
+  }
+  p{
+    font-size: 20px;
+  }
+
+
+  .supervisor, .calculator{
+    transform: translateY(0);
+}
+.box{
+    width: 350px;
+}
+
+
+}
