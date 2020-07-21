@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 :root{
-    
+
 --Very-Dark-Blue: hsl(234, 12%, 34%);
 --Grayish-Blue: hsl(229, 6%, 66%);
 --Very-Light-Gray: hsl(0, 0%, 98%);
@@ -19,12 +19,19 @@
      font-family: 'poppins' 'sans-serif';
      font-size: 15px;
      background:  rgba(202, 202, 202, 0.253) ;
-    
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     height: 100vh;
+
  }
 
  .text{
      text-align: center;
-     margin: 3% 0px 0px ;
+     margin: 0 auto;
+     margin-top: 3%;
+     width: 26%;
  }
  .colortext{
     font-family: 'poppins' 'sans-serif';
@@ -32,32 +39,33 @@
     color: var(--Very-Dark-Blue);
  }
  h1.bold{
-     font-weight: 400; 
-     margin-top:20px ;
+     font-weight: 400;
+     margin:1.25rem 0px ;
  }
 
 .text >p{
     text-align: center;
-    padding: 30px 500px;
+    padding: 30px 0px;
 }
 .main{
     display: flex;
     justify-content: center;
      flex-wrap: wrap;
-    margin: 10px auto ;
+    margin:  auto ;
     width: 70%;
+
 }
 .box{
-    height: 200px;
+    height: 12.5em;
     font-family: 'poppins' 'sans-serif';
     font-weight: 400;
-    width: 250px;
+    width: 15.625em;
     background-color: white;
-   box-shadow:  3px 6px 33px -8px rgba(0,0,0,0.73); 
+   box-shadow:  3px 6px 33px -8px rgba(0,0,0,0.73);
     border-radius: 7px;
     margin: 20px ;
-    position: relative;
-   
+  
+
 }
 .supervisor{
     border-top: 4px solid hsl(180, 62%, 55%);
@@ -74,10 +82,10 @@
 
  .supervisor, .calculator{
     transform: translateY(50%);
-} 
+}
 .box h3{
     font-size: 28px;
-} 
+}
 .box p{
     font-size: 14px;
 }
@@ -85,35 +93,76 @@
     padding: 15px 10px 5px 25px;
 }
 svg{
-    position: absolute;
-    right: 10px;
-    bottom: 20px;
+   
+    margin-left: 70%;
 }
 
 
 
-/* for mobile version */
+/* for tablet----------- */
 
-@media screen and (max-width:600px){
-    .text{
-        margin-top: 50px;
+
+@media screen and (max-width:1194px){
+
+    .main{
+       
+        width: 90%;
+    }
+    .text >p{
+        padding: 10px;
+    
+        
+ }
+
+ .text > .bold{
+     margin: 1rem 0px ;
+ }
+}
+
+ @media screen and (max-width:940px){
+
+    .main{
+       
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width:840px){
+
+    .bold{
+        margin: 0px 0px;
+    }
+    .text p{
+        padding: 0px;
+    }
+    .box{
+        margin: 12px;
+    }
+ }
+
+ @media screen and (max-width:790px){
+
+  .text{
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .text p{
+      width: 50%;
+      margin: auto;
+}
+
+    .main{
+        align-items: center;
     }
 
-  .text >p{
-      padding: 50px;
-     
-  }
-  p{
-    font-size: 20px;
-  }
+    .main .supervisor, .main .calculator{
+        transform: translate(0%,0%);
+    }
+    footer{
+        height: 10vh;
+        background-color: red;
+    }
+ }
 
+   
 
-  .supervisor, .calculator{
-    transform: translateY(0);
-}
-.box{
-    width: 350px;
-}
-
-
-}
