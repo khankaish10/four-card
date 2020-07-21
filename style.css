@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 1.25rem; text-align: center; }
+
 
 *{
     margin: 0;
@@ -160,7 +160,7 @@ svg{
     }
     footer{
         height: 10vh;
-        background-color: red;
+       
     }
  }
 
